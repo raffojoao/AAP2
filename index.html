@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAP2 - JOGO DA VELHA</title>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/velha.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="formulario">
+      <div class="titulo">
+        <h1>INSIRA OS JOGADORES:</h1>
+      </div>
+      <div>
+        <textarea
+          class="nomeJogador"
+          id="jogadorMarvel"
+          placeholder="Jogador Marvel"
+        ></textarea>
+        <textarea
+          class="nomeJogador"
+          id="jogadorDC"
+          placeholder="Jogador DC"
+        ></textarea>
+        <button id="btnIniciarJogo">Jogar!</button>
+      </div>
+    </div>
+
+    <div id="jogo">
+      <div class="titulo">
+        <h1>MARVEL VS DC</h1>
+      </div>
+      <table class="tabuleiro">
+        <tr>
+          <td class="casa" id="casa1">
+            <img
+              class="imagem"
+              id="imagem1"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa2">
+            <img
+              class="imagem"
+              id="imagem2"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa3">
+            <img
+              class="imagem"
+              id="imagem3"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="casa" id="casa4">
+            <img
+              class="imagem"
+              id="imagem4"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa5">
+            <img
+              class="imagem"
+              id="imagem5"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa6">
+            <img
+              class="imagem"
+              id="imagem6"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="casa" id="casa7">
+            <img
+              class="imagem"
+              id="imagem7"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa8">
+            <img
+              class="imagem"
+              id="imagem8"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+          <td class="casa" id="casa9">
+            <img
+              class="imagem"
+              id="imagem9"
+              src=""
+              width="80px"
+              height="80px"
+            />
+          </td>
+        </tr>
+      </table>
+      <div class="titulo">
+        <h1 class="jogadorAtual"></h1>
+      </div>
+    </div>
+
+    <div id="jogarNovamente">
+      <table class="placar">
+        <tr>
+          <th colspan="2">PLACAR</th>
+        </tr>
+        <tr>
+          <td>Marvel</td>
+          <td>DC</td>
+        </tr>
+        <tr>
+          <td class="pontosMarvel">0</td>
+          <td class="pontosDC">0</td>
+        </tr>
+      </table>
+      <label id="btnJogarNovamente">Jogar novamente</label>
+    </div>
+  </body>
+</html>
